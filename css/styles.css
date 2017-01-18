@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box; }
+
+#app-container {
+  font-family: "Hind", "Futura", "sans-serif"; }
+
+a {
+  text-decoration: none;
+  color: #000; }
+
+img {
+  display: block;
+  width: 100%; }
+
+.u_column-container {
+  font-size: 0; }
+
+.u_column-container > * {
+  display: inline-block;
+  vertical-align: top;
+  font-size: medium; }
+
+/* NAV BAR 1 */
+.nav-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #F8F8F8;
+  width: 100%;
+  margin: 0; }
+
+.nav-bar > * {
+  border: 1px solid #ddd; }
+
+.nav-logo {
+  width: 20%;
+  margin: 0 auto;
+  padding: 7px 15px 6px;
+  align-content: center; }
+
+.nav-logo_orange {
+  max-width: 50px; }
+
+.nav-restaurant,
+.nav-ventures {
+  width: 30%;
+  text-align: center;
+  margin: 0 auto;
+  padding: 15px; }
+
+.nav-menu {
+  width: 20%;
+  text-align: center;
+  padding: 15px; }
+
+/* NAV BUTTON */
+.nav-button {
+  width: 100%;
+  background: #030404;
+  padding-top: 52px; }
+
+.nav-button_r {
+  width: 80%;
+  color: #FFF;
+  padding: 3px;
+  border-right: 1px solid #CCC; }
+
+.nav-button_icon {
+  width: 20%; }
+
+/*# sourceMappingURL=styles.css.map */

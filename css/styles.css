@@ -12,6 +12,10 @@ img {
   display: block;
   width: 100%; }
 
+body {
+  margin: 0;
+  background: #F8F8F8; }
+
 .u_column-container {
   font-size: 0; }
 
@@ -21,7 +25,7 @@ img {
   font-size: medium; }
 
 /* NAV BAR 1 */
-.nav-bar {
+.mobile_nav-bar {
   position: fixed;
   top: 0;
   left: 0;
@@ -29,35 +33,41 @@ img {
   width: 100%;
   margin: 0; }
 
-.nav-bar > * {
+.mobile_nav-bar > * {
   border: 1px solid #ddd; }
 
-.nav-logo {
+.mobile_nav-logo {
   width: 20%;
-  margin: 0 auto;
-  padding: 7px 15px 6px;
-  align-content: center; }
+  padding: 7px 15px 6px; }
 
 .nav-logo_orange {
-  max-width: 50px; }
+  max-width: 50px;
+  margin: 0 auto; }
 
-.nav-restaurant,
-.nav-ventures {
+.mobile_nav-restaurant,
+.mobile_nav-ventures {
   width: 30%;
   text-align: center;
   margin: 0 auto;
   padding: 15px; }
 
-.nav-menu {
+.mobile_nav-menu {
   width: 20%;
   text-align: center;
   padding: 15px; }
 
+.desktop_nav-bar {
+  display: none; }
+
 /* NAV BUTTON */
-.nav-button {
+.desktop_nav-button {
+  display: none; }
+
+.mobile_nav-button {
   width: 100%;
   background: #030404;
-  padding-top: 52px; }
+  padding-top: 52px;
+  margin: 0 auto; }
 
 .nav-button_r {
   width: 80%;
@@ -66,6 +76,229 @@ img {
   border-right: 1px solid #CCC; }
 
 .nav-button_icon {
-  width: 20%; }
+  width: 20%;
+  text-align: center; }
+
+.nav-button_icon i {
+  color: #fff;
+  font-size: 57px;
+  font-weight: 200;
+  padding-top: 3px; }
+
+/* BODY */
+.main-restaurant {
+  width: 100%;
+  padding: 10% 0; }
+
+.main-restaurant > * {
+  text-align: center;
+  color: #F7F7F7;
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 4px #000000; }
+
+.main-title {
+  font-size: 12px;
+  margin-top: 0; }
+
+.main_restaurant-name {
+  margin-bottom: 0;
+  padding-top: 10%; }
+
+.main_wavy {
+  display: block;
+  margin: 0 auto 20%;
+  width: 10%; }
+
+.mr_noodle {
+  background-image: url("../images/momofuko-01-noodlebarbowl_mini.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  margin: 5px 0; }
+
+.mr_ssam {
+  background-image: url("../images/momofuko-02-ssam-bar.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  margin: 5px 0; }
+
+.mr_ko {
+  background-image: url("../images/momofuko-03-ko.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  margin: 5px 0; }
+
+.mr_ma-peche {
+  background-image: url("../images/momofuko-04-ma-peche.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  margin: 5px 0; }
+
+.mr_nishi {
+  background-image: url("../images/momofuko-05-nishi.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  margin: 5px 0; }
+
+.mr_ccdc {
+  background-image: url("../images/momofuko-06-CCDC.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  margin: 5px 0; }
+
+.mr_nikai {
+  background-image: url("../images/nikai-image.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  margin: 5px 0; }
+
+.mr_daisho {
+  background-image: url("../images/momofuko-07-daisho.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  margin: 5px 0; }
+
+.mr_shoto {
+  background-image: url("../images/momofuko-08-shoto.png");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  margin: 5px 0; }
+
+.mr_milk-bar {
+  background-image: url("../images/milk-bar1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 100px 0;
+  margin: 5px 0; }
+
+@media screen and (min-width: 678px) {
+  .mobile_nav-bar {
+    display: none; }
+
+  .desktop_nav-bar {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background: #F9F9F9;
+    border: 2px solid #D9D8D8;
+    z-index: 2; }
+
+  .desktop_nav-bar > * {
+    width: 100%; }
+
+  .desktop_nav-bar img {
+    width: 60px;
+    margin: 0 auto;
+    padding: 20px 0 10px; }
+
+  .desktop_nav-logo .nav_logo02 {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 10px 80px 10px; }
+
+  .desktop_nav-restaurant {
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 10px 40px 10px;
+    border-top: 1px solid #EEEEEE; }
+
+  .desktop_nav-company {
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 10px 40px 10px;
+    border-top: 1px solid #EEEEEE; }
+
+  .desktop_nav-ventures {
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 10px 40px 10px;
+    border-top: 1px solid #EEEEEE; }
+
+  .desktop_social {
+    text-align: center;
+    font-size: 15px;
+    margin: 0 auto;
+    padding: 10px 40px 10px;
+    border-top: 1px solid #EEEEEE;
+    padding-top: 60px;
+    padding-bottom: 10px; }
+    .desktop_social .social-icons {
+      width: 100%; }
+    .desktop_social .social {
+      margin: 0 6px;
+      width: 25%; }
+    .desktop_social img {
+      padding: 0; }
+    .desktop_social i {
+      font-size: 21px; }
+    .desktop_social p {
+      padding-top: none; }
+
+  .mobile_nav-button {
+    display: none; }
+
+  .desktop_nav-button {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #030404;
+    margin: 0 auto;
+    z-index: 1;
+    padding-left: 200px; }
+
+  .desktop_r {
+    width: 50%;
+    text-align: left;
+    font-size: 15px;
+    color: #fff;
+    padding: 15px 0;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding-left: 15px; }
+
+  .desktop_r:hover {
+    background: #343434; }
+
+  .cool-column {
+    width: 50%;
+    text-align: right;
+    padding-left: 0; }
+
+  .desktop_info:hover {
+    background: #343434; }
+
+  .desktop_info {
+    width: 49.5%;
+    font-size: 15px;
+    color: #fff;
+    padding: 15px 0;
+    letter-spacing: 2px;
+    font-weight: 100;
+    padding-right: 15px; }
+
+  .restaurant-list {
+    width: 95%;
+    margin: 0 auto;
+    padding-left: 200px;
+    padding-top: 50px; }
+
+  .main-restaurant {
+    width: 50%; } }
 
 /*# sourceMappingURL=styles.css.map */
